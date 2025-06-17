@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body { 
+        background: #121212;
+        color: #fff;
+        min-height: 100vh;
+        padding: 20px;
+        font-family: "Permanet Marker" , cursive;
+    height: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0.7)),
+        url(fotos\ aladas/barra.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+h1 {
+    font-family: "Permanet Marker" , cursive;
+    text-align: center;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 70px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-shadow:
+    0 0 5px #FFEB3B,  /* Brillo cercano en amarillo */
+    0 0 15px #FFEB3B,  /* Brillo más suave */
+    0 0 25px #FFEB3B,  /* Brillo más difuso */
+    0 0 35px #FFEB3B,  /* Brillo más intenso */
+    0 0 50px #FFEB3B,  /* Brillo aún mayor */
+    0 0 75px #FFEB3B,  /* Brillo muy suave */
+    0 0 100px #FFEB3B; /* Brillo final, más suave */
+}
+
+h2 { 
+    color: #FFFF; /* color BLANCO */
+    text-shadow:
+      0 0 5px #FFA500,
+      0 0 10px #FF8C00,
+      0 0 20px #FF8C00,
+      0 0 40px #FF4500,
+      0 0 80px #FF4500;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 100px;
+   }
+   
+table {
+    
+     width: 90%;
+      margin: 20px auto;
+       border-collapse: collapse;
+        background-color: white; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-bottom: 2.5cm;
+        border: 5px solid red;
+        animation: flash-border 1s infinite alternate;
+        border-radius: 10px; /* opcional, para bordes redondeados */
+        }
+        @keyframes flash-border {
+            0% {
+              border-color: red;
+              box-shadow: 0 0 10px red;
+            }
+            100% {
+              border-color: yellow;
+              box-shadow: 0 0 20px yellow;
+            }
+     }
+th, td {
+    font-family: "PERMANENT MARKER", cursive;
+    color: black;
+     padding: 10px;
+      border: 1px solid #ddd;
+       text-align: center; 
+    }
+th { 
+    
+    background-color: black;
+    font-family: "PERMANENT MARKER", cursive;
+   
+    font-size:  20px;
+    color:#fff;
+
+     }
+     .contenedor {
+        display: flex;
+        justify-content: center; /* left | center | flex-end */
+        align-items: flex-start;   /* flex-start | center | flex-end */
+        height: 50px;
+
+      }
+
+ .btn-1 {
+    font-size: 1.5em;
+    padding: 15px 40px;
+    color: #FF0000;
+    background: black;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+  
+    /* Efecto de neón rojo */
+    box-shadow:
+      0 0 5px red,
+      0 0 10px red,
+      0 0 20px #ff0000,
+      0 0 40px #ff1a1a,
+      0 0 80px #ff3333;
+  
+    transition: all 0.3s ease;
+  }
+  .btn-1:hover {
+    box-shadow:
+      0 0 10px #ff1a1a,
+      0 0 20px #ff3333,
+      0 0 40px #ff4d4d,
+      0 0 80px #ff6666,
+      0 0 100px #ff8080;
+    color: #ffff;
+    border-color: #ff6666;
+        
+}  
+
+
+/* Contenedor para permitir scroll horizontal en móvil */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  h1, h2 {
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
+
+  .contenedor {
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .btn-1 {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-1:hover {
+    background-color: #e65c00;
+  }
+}
